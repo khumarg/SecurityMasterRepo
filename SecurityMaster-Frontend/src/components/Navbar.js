@@ -5,12 +5,12 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/AllEquities'>Equities</NavLink>
-        <NavLink to='/Equities/ID'>Get Equities By ID</NavLink>
-        <NavLink to='/Equities/Add'>Add Equity</NavLink>
-        <NavLink to='/Equities/Update'>Update Equity</NavLink>
-        <NavLink to='/Equities/Delete'>Delete Equity</NavLink>
+        <NavLink className="nav-link" to='/'>Home</NavLink>
+        <NavLink className="nav-link" to='/AllEquities'>Equities</NavLink>
+        <NavLink className="nav-link" to='/Equities/ID'>Get Equities By ID</NavLink>
+        <NavLink className="nav-link" to='/Equities/Add'>Add Equity</NavLink>
+        <NavLink className="nav-link"  to='/Equities/Update'>Update Equity</NavLink>
+        <NavLink className="nav-link"  to='/Equities/Delete'>Delete Equity</NavLink>
       </nav>
     </div>
   )

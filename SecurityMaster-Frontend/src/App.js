@@ -11,8 +11,8 @@ import UpdateEquity from './components/equities/UpdateEquity';
 function App() {
   return (
     <div className="App">
-      <h2>Security Master</h2>
       <Navbar/>
+      <h2>Security Master</h2>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/AllEquities' element={<GetAllEquities/>}/>

@@ -37,8 +37,8 @@ const DeleteEquity = () => {
         <h2>Delete Equity</h2>
         <form onSubmit={deleteBtnHandler}>
             <label>Enter SecurityID: </label>
-            <input type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter SecurityID'></input>
-            <button type='submit'>Delete Equity</button>
+            <input className='deleteSID-input-box' type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter SecurityID'></input>
+            <button className='deleteBtn' type='submit'>Delete Equity</button>
 
             <h2>{msg}</h2>
         </form>

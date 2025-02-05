@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 
 const GetEquityByID = () => {
@@ -22,8 +22,8 @@ const GetEquityByID = () => {
         <h2>Get Equity By ID</h2>
         <form onSubmit={clickHandler}>
             <label>Enter SecurityID: </label>
-            <input type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter SecurityID'></input>
-            <button type='submit'>Search</button>
+            <input className='getByID-input-box' type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter SecurityID'></input>
+            <button className='searchBtn' type='submit'>Search</button>
         </form>
         <h2>{equity.securityId} - {equity.securityName} - {equity.cusip}</h2>
     </div>

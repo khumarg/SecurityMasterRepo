@@ -104,23 +104,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="SecurityID">SecurityID:</label>
-          <input type="text" id="SecurityID" name="securityId" value={formData.securityId} onChange={handleChange} />
+          <input type="text" id="SecurityID" name="securityId" value={formData.securityId} onChange={handleChange} required/>
         </div>
         <div className="form-group">
           <label htmlFor="Security_Name">Security Name:</label>
-          <input type="text" id="Security_Name" name="SecurityName" value={formData.SecurityName} onChange={handleChange} />
+          <input type="text" id="Security_Name" name="SecurityName" value={formData.SecurityName} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Security_Description">Security Description:</label>
-          <input type="text" id="Security_Description" name="SecurityDescription" value={formData.SecurityDescription} onChange={handleChange} />
+          <input type="text" id="Security_Description" name="SecurityDescription" value={formData.SecurityDescription} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Has_Position">Has Position:</label>
-          <input type="text" id="Has_Position" name="HasPosition" value={formData.HasPosition} onChange={handleChange} />
+          <input type="text" id="Has_Position" name="HasPosition" value={formData.HasPosition} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Is_Active_Security">Is Active Security:</label>
-          <input type="text" id="Is_Active_Security" name="IsActiveSecurity" value={formData.IsActiveSecurity} onChange={handleChange} />
+          <input type="text" id="Is_Active_Security" name="IsActiveSecurity" value={formData.IsActiveSecurity} onChange={handleChange} required />
         </div>
       </div>
 
@@ -128,11 +128,11 @@ const AddEquity = () => {
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="Lot_Size">Lot Size:</label>
-          <input type="text" id="Lot_Size" name="Lot_Size" value={formData.Lot_Size} onChange={handleChange} />
+          <input type="text" id="Lot_Size" name="Lot_Size" value={formData.Lot_Size} onChange={handleChange} required/>
         </div>
         <div className="form-group">
           <label htmlFor="BBG_Unique_Name">BBG Unique Name:</label>
-          <input type="text" id="BBG_Unique_Name" name="BbgUniqueName" value={formData.BbgUniqueName} onChange={handleChange} />
+          <input type="text" id="BBG_Unique_Name" name="BbgUniqueName" value={formData.BbgUniqueName} onChange={handleChange} required/>
         </div>
         <div className="form-group">
           <label htmlFor="CUSIP">CUSIP:</label>
@@ -152,11 +152,11 @@ const AddEquity = () => {
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="Bloomberg_Ticker">Bloomberg Ticker:</label>
-          <input type="text" id="Bloomberg_Ticker" name="BloombergTicker" value={formData.BloombergTicker} onChange={handleChange} />
+          <input type="text" id="Bloomberg_Ticker" name="BloombergTicker" value={formData.BloombergTicker} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Bloomberg_Unique_ID">Bloomberg Unique ID:</label>
-          <input type="text" id="Bloomberg_Unique_ID" name="BloombergUniqueId" value={formData.BloombergUniqueId} onChange={handleChange} />
+          <input type="text" id="Bloomberg_Unique_ID" name="BloombergUniqueId" value={formData.BloombergUniqueId} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="BBG_Global_ID">BBG Global ID:</label>
@@ -164,11 +164,11 @@ const AddEquity = () => {
         </div>
         <div className="form-group">
           <label htmlFor="Ticker_and_Exchange">Ticker and Exchange:</label>
-          <input type="text" id="Ticker_and_Exchange" name="TickerAndExchange" value={formData.TickerAndExchange} onChange={handleChange} />
+          <input type="text" id="Ticker_and_Exchange" name="TickerAndExchange" value={formData.TickerAndExchange} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Is_ADR_Flag">Is ADR Flag:</label>
-          <input type="text" id="Is_ADR_Flag" name="IsAdrFlag" value={formData.IsAdrFlag} onChange={handleChange} />
+          <input type="text" id="Is_ADR_Flag" name="IsAdrFlag" value={formData.IsAdrFlag} onChange={handleChange} required />
         </div>
       </div>
 
@@ -192,7 +192,7 @@ const AddEquity = () => {
         </div>
         <div className='form-group'>
           <label htmlFor="Pricing_Currency">Pricing Currency:</label>
-          <input type="text" id="Pricing_Currency" name="PricingCurrency" value={formData.PricingCurrency} onChange={handleChange} />
+          <input type="text" id="Pricing_Currency" name="PricingCurrency" value={formData.PricingCurrency} onChange={handleChange} required />
         </div>
       </div>
 
@@ -236,11 +236,11 @@ const AddEquity = () => {
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Asset_Class">PF Asset Class:</label>
-          <input type="text" id="PF_Asset_Class" name="PfAssetClass" value={formData.PfAssetClass} onChange={handleChange} />
+          <input type="text" id="PF_Asset_Class" name="PfAssetClass" value={formData.PfAssetClass} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Country">PF Country:</label>
-          <input type="text" id="PF_Country" name="PfCountry" value={formData.PfCountry} onChange={handleChange} />
+          <input type="text" id="PF_Country" name="PfCountry" value={formData.PfCountry} onChange={handleChange} required/>
         </div>
       </div>
 
@@ -248,19 +248,19 @@ const AddEquity = () => {
       <div className="form-row">
         <div className='form-group'>
           <label htmlFor="PF_Credit_Rating">PF Credit Rating:</label>
-          <input type="text" id="PF_Credit_Rating" name="PfCreditRating" value={formData.PfCreditRating} onChange={handleChange} />
+          <input type="text" id="PF_Credit_Rating" name="PfCreditRating" value={formData.PfCreditRating} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Currency">PF Currency:</label>
-          <input type="text" id="PF_Currency" name="PfCurrency" value={formData.PfCurrency} onChange={handleChange} />
+          <input type="text" id="PF_Currency" name="PfCurrency" value={formData.PfCurrency} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Instrument">PF Instrument:</label>
-          <input type="text" id="PF_Instrument" name="PfInstrument" value={formData.PfInstrument} onChange={handleChange} />
+          <input type="text" id="PF_Instrument" name="PfInstrument" value={formData.PfInstrument} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Liquidity_Profile">PF Liquidity Profile:</label>
-          <input type="text" id="PF_Liquidity_Profile" name="PfLiquidityProfile" value={formData.PfLiquidityProfile} onChange={handleChange} />
+          <input type="text" id="PF_Liquidity_Profile" name="PfLiquidityProfile" value={formData.PfLiquidityProfile} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Maturity">PF Maturity:</label>
@@ -276,7 +276,7 @@ const AddEquity = () => {
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Region">PF Region:</label>
-          <input type="text" id="PF_Region" name="PfRegion" value={formData.PfRegion} onChange={handleChange} />
+          <input type="text" id="PF_Region" name="PfRegion" value={formData.PfRegion} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Sector">PF Sector:</label>
@@ -284,11 +284,11 @@ const AddEquity = () => {
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Sub_Asset_Class">PF Sub Asset Class:</label>
-          <input type="text" id="PF_Sub_Asset_Class" name="PfSubAssetClass" value={formData.PfSubAssetClass} onChange={handleChange} />
+          <input type="text" id="PF_Sub_Asset_Class" name="PfSubAssetClass" value={formData.PfSubAssetClass} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="Country_of_Issuance">Country of Issuance:</label>
-          <input type="text" id="Country_of_Issuance" name="CountryOfIssuance" value={formData.CountryOfIssuance} onChange={handleChange} />
+          <input type="text" id="Country_of_Issuance" name="CountryOfIssuance" value={formData.CountryOfIssuance} onChange={handleChange} required />
         </div>
       </div>
 
@@ -304,15 +304,15 @@ const AddEquity = () => {
         </div>
         <div className='form-group'>
           <label htmlFor="Issue_Currency">Issue Currency:</label>
-          <input type="text" id="Issue_Currency" name="IssueCurrency" value={formData.IssueCurrency} onChange={handleChange} />
+          <input type="text" id="Issue_Currency" name="IssueCurrency" value={formData.IssueCurrency} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="Trading_Currency">Trading Currency:</label>
-          <input type="text" id="Trading_Currency" name="TradingCurrency" value={formData.TradingCurrency} onChange={handleChange} />
+          <input type="text" id="Trading_Currency" name="TradingCurrency" value={formData.TradingCurrency} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="BBG_Industry_Sub_Group">BBG Industry Sub Group:</label>
-          <input type="text" id="BBG_Industry_Sub_Group" name="BbgIndustrySubGroup" value={formData.BbgIndustrySubGroup} onChange={handleChange} />
+          <input type="text" id="BBG_Industry_Sub_Group" name="BbgIndustrySubGroup" value={formData.BbgIndustrySubGroup} onChange={handleChange} required/>
         </div>
       </div>
 
@@ -320,19 +320,19 @@ const AddEquity = () => {
       <div className="form-row">
         <div>
           <label htmlFor="Bloomberg_Industry_Group">Bloomberg Industry Group:</label>
-          <input type="text" id="Bloomberg_Industry_Group" name="BloombergIndustryGroup" value={formData.BloombergIndustryGroup} onChange={handleChange} />
+          <input type="text" id="Bloomberg_Industry_Group" name="BloombergIndustryGroup" value={formData.BloombergIndustryGroup} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Bloomberg_Sector">Bloomberg Sector:</label>
-          <input type="text" id="Bloomberg_Sector" name="BloombergSector" value={formData.BloombergSector} onChange={handleChange} />
+          <input type="text" id="Bloomberg_Sector" name="BloombergSector" value={formData.BloombergSector} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Country_of_Incorporation">Country of Incorporation:</label>
-          <input type="text" id="Country_of_Incorporation" name="CountryOfIncorporation" value={formData.CountryOfIncorporation} onChange={handleChange} />
+          <input type="text" id="Country_of_Incorporation" name="CountryOfIncorporation" value={formData.CountryOfIncorporation} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Risk_Currency">Risk Currency:</label>
-          <input type="text" id="Risk_Currency" name="RiskCurrency" value={formData.RiskCurrency} onChange={handleChange} />
+          <input type="text" id="Risk_Currency" name="RiskCurrency" value={formData.RiskCurrency} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Open_Price">Open Price:</label>
@@ -372,19 +372,19 @@ const AddEquity = () => {
         </div>
         <div>
           <label htmlFor="Dividend_Declared_Date">Dividend Declared Date:</label>
-          <input type="date" id="Dividend_Declared_Date" name="DividendDeclaredDate" value={formData.DividendDeclaredDate} onChange={handleChange} />
+          <input type="date" id="Dividend_Declared_Date" name="DividendDeclaredDate" value={formData.DividendDeclaredDate} onChange={handleChange} required />
         </div>
         <div>
           <label htmlFor="Dividend_Ex_Date">Dividend Ex Date:</label>
-          <input type="date" id="Dividend_Ex_Date" name="DividendExDate" value={formData.DividendExDate} onChange={handleChange} />
+          <input type="date" id="Dividend_Ex_Date" name="DividendExDate" value={formData.DividendExDate} onChange={handleChange} required />
         </div>
         <div>
           <label htmlFor="Dividend_Record_Date">Dividend Record Date:</label>
-          <input type="date" id="Dividend_Record_Date" name="DividendRecordDate" value={formData.DividendRecordDate} onChange={handleChange} />
+          <input type="date" id="Dividend_Record_Date" name="DividendRecordDate" value={formData.DividendRecordDate} onChange={handleChange} required />
         </div>
         <div>
           <label htmlFor="Dividend_Pay_Date">Dividend Pay Date:</label>
-          <input type="date" id="Dividend_Pay_Date" name="DividendPayDate" value={formData.DividendPayDate} onChange={handleChange} />
+          <input type="date" id="Dividend_Pay_Date" name="DividendPayDate" value={formData.DividendPayDate} onChange={handleChange} required />
         </div>
       </div>
 
@@ -400,7 +400,7 @@ const AddEquity = () => {
         </div>
         <div>
           <label htmlFor="Dividend_Type">Dividend Type:</label>
-          <input type="text" id="Dividend_Type" name="DividendType" value={formData.DividendType} onChange={handleChange} />
+          <input type="text" id="Dividend_Type" name="DividendType" value={formData.DividendType} onChange={handleChange} required />
         </div>
       </div>
 
