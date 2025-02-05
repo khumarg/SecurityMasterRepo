@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "/LQH6ziB4RDrrjh0vfiCG8CgrCOUKdMypB9ZtIkJrfc=",
+  "Source": "SecurityMasterAPI",
+  "BasePath": "_content/SecurityMasterAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
