@@ -1,25 +1,24 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-const GetEquityByID = () => {
+const GetEquityByName = () => {
     const [equity, setEquity] = useState({})
-    const [id, setId] = useState()
-
-    const [msg, setMsg] = useState('')
+    const [sname, setSname] = useState()
     const [flag, setFlag] = useState(false)
 
+    const[msg, setMsg] = useState('')
+
     const clickHandler = (event) => {
-        axios.get(`https://localhost:7126/api/Equities/${id}`)
+        axios.get(`https://localhost:7126/api/Equities/${sname}`)
             .then(res => {
                 console.log(res.data)
-
+                setEquity(res.data)
+                
                 setMsg('')
                 setFlag(true)
-
-                setEquity(res.data)
             })
             .catch(error => {
-                setMsg(`Could not found Equity ID: ${id}`)
+                setMsg(`Could not found Equity Name: ${sname}`)
                 console.log(error.message)
 
                 setFlag(false)
@@ -32,8 +31,8 @@ const GetEquityByID = () => {
             <div>
                 <h2>Get Equity By ID</h2>
                 <form onSubmit={clickHandler}>
-                    <label>Enter SecurityID: </label>
-                    <input className='getByID-input-box' type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter SecurityID'></input>
+                    <label>Enter Security Name: </label>
+                    <input className='getByID-input-box' type='text' value={sname} onChange={(event) => setSname(event.target.value)} placeholder='Enter Security Name'></input>
                     <button className='searchBtn' type='submit'>Search</button>
                 </form>
                 <h2>{msg}</h2>
@@ -44,11 +43,12 @@ const GetEquityByID = () => {
             <div>
                 <h2>Get Equity By ID</h2>
                 <form onSubmit={clickHandler}>
-                    <label>Enter SecurityID: </label>
-                    <input className='getByID-input-box' type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter SecurityID'></input>
+                    <label>Enter SecurityName: </label>
+                    <input className='getByID-input-box' type='text' value={sname} onChange={(event) => setSname(event.target.value)} placeholder='Enter SecurityName'></input>
                     <button className='searchBtn' type='submit'>Search</button>
                 </form>
                 <h2>{msg}</h2>
+        
                 <table>
                     <thead>
                         <tr>
@@ -190,4 +190,4 @@ const GetEquityByID = () => {
     }
 }
 
-export default GetEquityByID
+export default GetEquityByName

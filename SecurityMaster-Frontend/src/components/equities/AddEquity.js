@@ -5,68 +5,68 @@ const AddEquity = () => {
 
   const [formData, setFormData] = useState({
     securityId: 0,
-    SecurityName: '',
-    SecurityDescription: '',
-    HasPosition: '',
-    IsActiveSecurity: '',
-    Lot_Size: 0,
-    BbgUniqueName: '',
-    CUSIP: '',
-    ISIN: '',
-    SEDOL: '',
-    BloombergTicker: '',
-    BloombergUniqueId: '',
-    BBG_Global_ID: '',
-    TickerAndExchange: '',
-    IsAdrFlag: '',
-    ADR_Underlying_Ticker: '',
-    ADR_Underlying_Currency: '',
-    Shares_Per_ADR: '',
-    IPO_Date: '',
-    PricingCurrency: '',
-    Settle_Days: 0,
-    Total_Shares_Outstanding: 0.0,
-    Voting_Rights_Per_Share: 0.0,
-    Average_Volume_20D: 0.0,
-    Beta: 0.0,
-    Short_Interest: 0.0,
-    Return_YTD: 0.0,
-    Volatility_90D: 0.0,
-    PfAssetClass: '',
-    PfCountry: '',
-    PfCreditRating: '',
-    PfCurrency: '',
-    PfInstrument: '',
-    PfLiquidityProfile: '',
-    PF_Maturity: '',
-    PF_NAICS_Code: '',
-    PfRegion: '',
-    PF_Sector: '',
-    PfSubAssetClass: '',
-    CountryOfIssuance: '',
-    Exchange: '',
-    Issuer: '',
-    IssueCurrency: '',
-    TradingCurrency: '',
-    BbgIndustrySubGroup: '',
-    BloombergIndustryGroup: '',
-    BloombergSector: '',
-    CountryOfIncorporation: '',
-    RiskCurrency: '',
-    Open_Price: 0.0,
-    Close_Price: 0.0,
-    Volume: 0.0,
-    Last_Price: 0.0,
-    Ask_Price: 0.0,
-    Bid_Price: 0.0,
-    PE_Ratio: 0.0,
-    DividendDeclaredDate: '',
-    DividendExDate: '',
-    DividendRecordDate: '',
-    DividendPayDate: '',
-    Dividend_Amount: 0.0,
-    Frequency: '',
-    DividendType: '',
+    securityName: '',
+    securityDescription: '',
+    hasPosition: '',
+    isActiveSecurity: '',
+    lotSize: 0,
+    bbgUniqueName: '',
+    cusip: '',
+    isin: '',
+    sedol: '',
+    bloombergTicker: '',
+    bloombergUniqueId: '',
+    bbgGlobalId: '',
+    tickerAndExchange: '',
+    isAdrFlag: '',
+    adrUnderlyingTicker: '',
+    adrUnderlyingCurrency: '',
+    sharesPerAdr: '',
+    ipoDate: '',
+    pricingCurrency: '',
+    settleDays: 0,
+    totalSharesOutstanding: 0.0,
+    votingRightsPerShare: 0.0,
+    averageVolume20d: 0.0,
+    beta: 0.0,
+    shortInterest: 0.0,
+    returnYtd: 0.0,
+    volatility90d: 0.0,
+    pfAssetClass: '',
+    pfCountry: '',
+    pfCreditRating: '',
+    pfCurrency: '',
+    pfInstrument: '',
+    pfLiquidityProfile: '',
+    pfMaturity: '',
+    pfNaicsCode: '',
+    pfRegion: '',
+    pfSector: '',
+    pfSubAssetClass: '',
+    countryOfIssuance: '',
+    exchange: '',
+    issuer: '',
+    issueCurrency: '',
+    tradingCurrency: '',
+    bbgIndustrySubGroup: '',
+    bloombergIndustryGroup: '',
+    bloombergSector: '',
+    countryOfIncorporation: '',
+    riskCurrency: '',
+    openPrice: 0.0,
+    closePrice: 0.0,
+    volume: 0.0,
+    lastPrice: 0.0,
+    askPrice: 0.0,
+    bidPrice: 0.0,
+    peRatio: 0.0,
+    dividendDeclaredDate: '',
+    dividendExDate: '',
+    dividendRecordDate: '',
+    dividendPayDate: '',
+    dividendAmount: 0.0,
+    frequency: '',
+    dividendType: '',
   });
 
   const handleChange = (e) => {
@@ -104,23 +104,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="SecurityID">SecurityID:</label>
-          <input type="text" id="SecurityID" name="securityId" value={formData.securityId} onChange={handleChange} required/>
+          <input type="text" id="securityId" name="securityId" value={formData.securityId} onChange={handleChange} required/>
         </div>
         <div className="form-group">
           <label htmlFor="Security_Name">Security Name:</label>
-          <input type="text" id="Security_Name" name="SecurityName" value={formData.SecurityName} onChange={handleChange} required />
+          <input type="text" id="securityName" name="securityName" value={formData.securityName} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Security_Description">Security Description:</label>
-          <input type="text" id="Security_Description" name="SecurityDescription" value={formData.SecurityDescription} onChange={handleChange} required />
+          <input type="text" id="securityDescription" name="securityDescription" value={formData.securityDescription} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Has_Position">Has Position:</label>
-          <input type="text" id="Has_Position" name="HasPosition" value={formData.HasPosition} onChange={handleChange} required />
+          <input type="text" id="hasPosition" name="hasPosition" value={formData.hasPosition} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Is_Active_Security">Is Active Security:</label>
-          <input type="text" id="Is_Active_Security" name="IsActiveSecurity" value={formData.IsActiveSecurity} onChange={handleChange} required />
+          <input type="text" id="isActiveSecurity" name="isActiveSecurity" value={formData.isActiveSecurity} onChange={handleChange} required />
         </div>
       </div>
 
@@ -128,23 +128,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="Lot_Size">Lot Size:</label>
-          <input type="text" id="Lot_Size" name="Lot_Size" value={formData.Lot_Size} onChange={handleChange} required/>
+          <input type="number" id="lotSize" name="lotSize" value={formData.lotSize} onChange={handleChange} required/>
         </div>
         <div className="form-group">
           <label htmlFor="BBG_Unique_Name">BBG Unique Name:</label>
-          <input type="text" id="BBG_Unique_Name" name="BbgUniqueName" value={formData.BbgUniqueName} onChange={handleChange} required/>
+          <input type="text" id="bbgUniqueName" name="bbgUniqueName" value={formData.bbgUniqueName} onChange={handleChange} required/>
         </div>
         <div className="form-group">
           <label htmlFor="CUSIP">CUSIP:</label>
-          <input type="text" id="CUSIP" name="CUSIP" value={formData.CUSIP} onChange={handleChange} />
+          <input type="text" id="cusip" name="cusip" value={formData.cusip} onChange={handleChange} />
         </div>
         <div className="form-group">
           <label htmlFor="ISIN">ISIN:</label>
-          <input type="text" id="ISIN" name="ISIN" value={formData.ISIN} onChange={handleChange} />
+          <input type="text" id="isin" name="isin" value={formData.isin} onChange={handleChange} />
         </div>
         <div className="form-group">
           <label htmlFor="SEDOL">SEDOL:</label>
-          <input type="text" id="SEDOL" name="SEDOL" value={formData.SEDOL} onChange={handleChange} />
+          <input type="text" id="sedol" name="sedol" value={formData.sedol} onChange={handleChange} />
         </div>
       </div>
 
@@ -152,23 +152,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="Bloomberg_Ticker">Bloomberg Ticker:</label>
-          <input type="text" id="Bloomberg_Ticker" name="BloombergTicker" value={formData.BloombergTicker} onChange={handleChange} required />
+          <input type="text" id="bloombergTicker" name="bloombergTicker" value={formData.bloombergTicker} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Bloomberg_Unique_ID">Bloomberg Unique ID:</label>
-          <input type="text" id="Bloomberg_Unique_ID" name="BloombergUniqueId" value={formData.BloombergUniqueId} onChange={handleChange} required />
+          <input type="text" id="bloombergUniqueId" name="bloombergUniqueId" value={formData.bloombergUniqueId} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="BBG_Global_ID">BBG Global ID:</label>
-          <input type="text" id="BBG_Global_ID" name="BBG_Global_ID" value={formData.BBG_Global_ID} onChange={handleChange} />
+          <input type="text" id="bbgGlobalId" name="bbgGlobalId" value={formData.bbgGlobalId} onChange={handleChange} />
         </div>
         <div className="form-group">
           <label htmlFor="Ticker_and_Exchange">Ticker and Exchange:</label>
-          <input type="text" id="Ticker_and_Exchange" name="TickerAndExchange" value={formData.TickerAndExchange} onChange={handleChange} required />
+          <input type="text" id="tickerAndExchange" name="tickerAndExchange" value={formData.tickerAndExchange} onChange={handleChange} required />
         </div>
         <div className="form-group">
           <label htmlFor="Is_ADR_Flag">Is ADR Flag:</label>
-          <input type="text" id="Is_ADR_Flag" name="IsAdrFlag" value={formData.IsAdrFlag} onChange={handleChange} required />
+          <input type="text" id="isAdrFlag" name="isAdrFlag" value={formData.isAdrFlag} onChange={handleChange} required />
         </div>
       </div>
 
@@ -176,23 +176,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className='form-group'>
         <label htmlFor="ADR_Underlying_Ticker">ADR Underlying Ticker:</label>
-        <input type="text" id="ADR_Underlying_Ticker" name="ADR_Underlying_Ticker" value={formData.ADR_Underlying_Ticker} onChange={handleChange} />
+        <input type="text" id="adrUnderlyingTicker" name="adrUnderlyingTicker" value={formData.adrUnderlyingTicker} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="ADR_Underlying_Currency">ADR Underlying Currency:</label>
-          <input type="text" id="ADR_Underlying_Currency" name="ADR_Underlying_Currency" value={formData.ADR_Underlying_Currency} onChange={handleChange} />
+          <input type="text" id="adrUnderlyingCurrency" name="adrUnderlyingCurrency" value={formData.adrUnderlyingCurrency} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Shares_Per_ADR">Shares Per ADR:</label>
-          <input type="text" id="Shares_Per_ADR" name="Shares_Per_ADR" value={formData.Shares_Per_ADR} onChange={handleChange} />
+          <input type="text" id="sharesPerAdr" name="sharesPerAdr" value={formData.sharesPerAdr} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="IPO_Date">IPO Date:</label>
-          <input type="date" id="IPO_Date" name="IPO_Date" value={formData.IPO_Date} onChange={handleChange} />
+          <input type="date" id="ipoDate" name="ipoDate" value={formData.ipoDate} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Pricing_Currency">Pricing Currency:</label>
-          <input type="text" id="Pricing_Currency" name="PricingCurrency" value={formData.PricingCurrency} onChange={handleChange} required />
+          <input type="text" id="pricingCurrency" name="pricingCurrency" value={formData.pricingCurrency} onChange={handleChange} required />
         </div>
       </div>
 
@@ -200,23 +200,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className='form-group'>
           <label htmlFor="Settle_Days">Settle Days:</label>
-          <input type="number" id="Settle_Days" name="Settle_Days" value={formData.Settle_Days} onChange={handleChange} />
+          <input type="number" id="settleDays" name="settleDays" value={formData.settleDays} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Total_Shares_Outstanding">Total Shares Outstanding:</label>
-          <input type="number" step="0.01" id="Total_Shares_Outstanding" name="Total_Shares_Outstanding" value={formData.Total_Shares_Outstanding} onChange={handleChange} />
+          <input type="number" step="0.01" id="totalSharesOutstanding" name="totalSharesOutstanding" value={formData.totalSharesOutstanding} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Voting_Rights_Per_Share">Voting Rights Per Share:</label>
-          <input type="number" step="0.01" id="Voting_Rights_Per_Share" name="Voting_Rights_Per_Share" value={formData.Voting_Rights_Per_Share} onChange={handleChange} />
+          <input type="number" step="0.01" id="votingRightsPerShare" name="votingRightsPerShare" value={formData.votingRightsPerShare} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Average_Volume_20D">Average Volume 20D:</label>
-          <input type="number" step="0.01" id="Average_Volume_20D" name="Average_Volume_20D" value={formData.Average_Volume_20D} onChange={handleChange} />
+          <input type="number" step="0.01" id="averageVolume20d" name="averageVolume20d" value={formData.averageVolume20d} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Beta">Beta:</label>
-          <input type="number" step="0.01" id="Beta" name="Beta" value={formData.Beta} onChange={handleChange} />
+          <input type="number" step="0.01" id="beta" name="beta" value={formData.beta} onChange={handleChange} />
         </div>
       </div>
 
@@ -224,23 +224,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className='form-group'>
           <label htmlFor="Short_Interest">Short Interest:</label>
-          <input type="number" step="0.01" id="Short_Interest" name="Short_Interest" value={formData.Short_Interest} onChange={handleChange} />
+          <input type="number" step="0.01" id="shortInterest" name="shortInterest" value={formData.shortInterest} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Return_YTD">Return YTD:</label>
-          <input type="number" step="0.01" id="Return_YTD" name="Return_YTD" value={formData.Return_YTD} onChange={handleChange} />
+          <input type="number" step="0.01" id="returnYtd" name="returnYtd" value={formData.returnYtd} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Volatility_90D">Volatility 90D:</label>
-          <input type="number" step="0.01" id="Volatility_90D" name="Volatility_90D" value={formData.Volatility_90D} onChange={handleChange} />
+          <input type="number" step="0.01" id="volatility90d" name="volatility90d" value={formData.volatility90d} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Asset_Class">PF Asset Class:</label>
-          <input type="text" id="PF_Asset_Class" name="PfAssetClass" value={formData.PfAssetClass} onChange={handleChange} required/>
+          <input type="text" id="pfAssetClass" name="pfAssetClass" value={formData.pfAssetClass} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Country">PF Country:</label>
-          <input type="text" id="PF_Country" name="PfCountry" value={formData.PfCountry} onChange={handleChange} required/>
+          <input type="text" id="pfCountry" name="pfCountry" value={formData.pfCountry} onChange={handleChange} required/>
         </div>
       </div>
 
@@ -248,23 +248,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className='form-group'>
           <label htmlFor="PF_Credit_Rating">PF Credit Rating:</label>
-          <input type="text" id="PF_Credit_Rating" name="PfCreditRating" value={formData.PfCreditRating} onChange={handleChange} required/>
+          <input type="text" id="pfCreditRating" name="pfCreditRating" value={formData.pfCreditRating} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Currency">PF Currency:</label>
-          <input type="text" id="PF_Currency" name="PfCurrency" value={formData.PfCurrency} onChange={handleChange} required />
+          <input type="text" id="pfCurrency" name="pfCurrency" value={formData.pfCurrency} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Instrument">PF Instrument:</label>
-          <input type="text" id="PF_Instrument" name="PfInstrument" value={formData.PfInstrument} onChange={handleChange} required />
+          <input type="text" id="pfInstrument" name="pfInstrument" value={formData.pfInstrument} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Liquidity_Profile">PF Liquidity Profile:</label>
-          <input type="text" id="PF_Liquidity_Profile" name="PfLiquidityProfile" value={formData.PfLiquidityProfile} onChange={handleChange} required />
+          <input type="text" id="pfLiquidityProfile" name="pfLiquidityProfile" value={formData.pfLiquidityProfile} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Maturity">PF Maturity:</label>
-          <input type="text" id="PF_Maturity" name="PF_Maturity" value={formData.PF_Maturity} onChange={handleChange} />
+          <input type="text" id="pfMaturity" name="pfMaturity" value={formData.pfMaturity} onChange={handleChange} />
         </div>
       </div>
 
@@ -272,23 +272,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className='form-group'>
           <label htmlFor="PF_NAICS_Code">PF NAICS Code:</label>
-          <input type="text" id="PF_NAICS_Code" name="PF_NAICS_Code" value={formData.PF_NAICS_Code} onChange={handleChange} />
+          <input type="text" id="pfNaicsCode" name="pfNaicsCode" value={formData.pfNaicsCode} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Region">PF Region:</label>
-          <input type="text" id="PF_Region" name="PfRegion" value={formData.PfRegion} onChange={handleChange} required />
+          <input type="text" id="pfRegion" name="pfRegion" value={formData.pfRegion} onChange={handleChange} required />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Sector">PF Sector:</label>
-          <input type="text" id="PF_Sector" name="PF_Sector" value={formData.PF_Sector} onChange={handleChange} />
+          <input type="text" id="pfSector" name="pfSector" value={formData.pfSector} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="PF_Sub_Asset_Class">PF Sub Asset Class:</label>
-          <input type="text" id="PF_Sub_Asset_Class" name="PfSubAssetClass" value={formData.PfSubAssetClass} onChange={handleChange} required/>
+          <input type="text" id="pfSubAssetClass" name="pfSubAssetClass" value={formData.pfSubAssetClass} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="Country_of_Issuance">Country of Issuance:</label>
-          <input type="text" id="Country_of_Issuance" name="CountryOfIssuance" value={formData.CountryOfIssuance} onChange={handleChange} required />
+          <input type="text" id="countryOfIssuance" name="countryOfIssuance" value={formData.countryOfIssuance} onChange={handleChange} required />
         </div>
       </div>
 
@@ -296,23 +296,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div className='form-group'>
           <label htmlFor="Exchange">Exchange:</label>
-          <input type="text" id="Exchange" name="Exchange" value={formData.Exchange} onChange={handleChange} />
+          <input type="text" id="exchange" name="exchange" value={formData.exchange} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Issuer">Issuer:</label>
-          <input type="text" id="Issuer" name="Issuer" value={formData.Issuer} onChange={handleChange} />
+          <input type="text" id="issuer" name="issuer" value={formData.issuer} onChange={handleChange} />
         </div>
         <div className='form-group'>
           <label htmlFor="Issue_Currency">Issue Currency:</label>
-          <input type="text" id="Issue_Currency" name="IssueCurrency" value={formData.IssueCurrency} onChange={handleChange} required/>
+          <input type="text" id="issueCurrency" name="issueCurrency" value={formData.issueCurrency} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="Trading_Currency">Trading Currency:</label>
-          <input type="text" id="Trading_Currency" name="TradingCurrency" value={formData.TradingCurrency} onChange={handleChange} required/>
+          <input type="text" id="tradingCurrency" name="tradingCurrency" value={formData.tradingCurrency} onChange={handleChange} required/>
         </div>
         <div className='form-group'>
           <label htmlFor="BBG_Industry_Sub_Group">BBG Industry Sub Group:</label>
-          <input type="text" id="BBG_Industry_Sub_Group" name="BbgIndustrySubGroup" value={formData.BbgIndustrySubGroup} onChange={handleChange} required/>
+          <input type="text" id="bbgIndustrySubGroup" name="bbgIndustrySubGroup" value={formData.bbgIndustrySubGroup} onChange={handleChange} required/>
         </div>
       </div>
 
@@ -320,23 +320,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div>
           <label htmlFor="Bloomberg_Industry_Group">Bloomberg Industry Group:</label>
-          <input type="text" id="Bloomberg_Industry_Group" name="BloombergIndustryGroup" value={formData.BloombergIndustryGroup} onChange={handleChange} required/>
+          <input type="text" id="bloombergIndustryGroup" name="bloombergIndustryGroup" value={formData.bloombergIndustryGroup} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Bloomberg_Sector">Bloomberg Sector:</label>
-          <input type="text" id="Bloomberg_Sector" name="BloombergSector" value={formData.BloombergSector} onChange={handleChange} required/>
+          <input type="text" id="bloombergSector" name="bloombergSector" value={formData.bloombergSector} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Country_of_Incorporation">Country of Incorporation:</label>
-          <input type="text" id="Country_of_Incorporation" name="CountryOfIncorporation" value={formData.CountryOfIncorporation} onChange={handleChange} required/>
+          <input type="text" id="countryOfIncorporation" name="countryOfIncorporation" value={formData.countryOfIncorporation} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Risk_Currency">Risk Currency:</label>
-          <input type="text" id="Risk_Currency" name="RiskCurrency" value={formData.RiskCurrency} onChange={handleChange} required/>
+          <input type="text" id="riskCurrency" name="riskCurrency" value={formData.riskCurrency} onChange={handleChange} required/>
         </div>
         <div>
           <label htmlFor="Open_Price">Open Price:</label>
-          <input type="number" step="0.01" id="Open_Price" name="Open_Price" value={formData.Open_Price} onChange={handleChange} />
+          <input type="number" step="0.01" id="openPrice" name="openPrice" value={formData.openPrice} onChange={handleChange} />
         </div>
       </div>
 
@@ -344,23 +344,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div>
           <label htmlFor="Close_Price">Close Price:</label>
-          <input type="number" step="0.01" id="Close_Price" name="Close_Price" value={formData.Close_Price} onChange={handleChange} />
+          <input type="number" step="0.01" id="closePrice" name="closePrice" value={formData.closePrice} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="Volume">Volume:</label>
-          <input type="number" step="0.01" id="Volume" name="Volume" value={formData.Volume} onChange={handleChange} />
+          <input type="number" step="0.01" id="volume" name="volume" value={formData.volume} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="Last_Price">Last Price:</label>
-          <input type="number" step="0.01" id="Last_Price" name="Last_Price" value={formData.Last_Price} onChange={handleChange} />
+          <input type="number" step="0.01" id="lastPrice" name="lastPrice" value={formData.lastPrice} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="Ask_Price">Ask Price:</label>
-          <input type="number" step="0.01" id="Ask_Price" name="Ask_Price" value={formData.Ask_Price} onChange={handleChange} />
+          <input type="number" step="0.01" id="askPrice" name="askPrice" value={formData.askPrice} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="Bid_Price">Bid Price:</label>
-          <input type="number" step="0.01" id="Bid_Price" name="Bid_Price" value={formData.Bid_Price} onChange={handleChange} />
+          <input type="number" step="0.01" id="bidPrice" name="bidPrice" value={formData.bidPrice} onChange={handleChange} />
         </div>
       </div>
 
@@ -368,23 +368,23 @@ const AddEquity = () => {
       <div className="form-row">
         <div>
           <label htmlFor="PE_Ratio">PE Ratio:</label>
-          <input type="number" step="0.01" id="PE_Ratio" name="PE_Ratio" value={formData.PE_Ratio} onChange={handleChange} />
+          <input type="number" step="0.01" id="peRatio" name="peRatio" value={formData.peRatio} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="Dividend_Declared_Date">Dividend Declared Date:</label>
-          <input type="date" id="Dividend_Declared_Date" name="DividendDeclaredDate" value={formData.DividendDeclaredDate} onChange={handleChange} required />
+          <input type="date" id="dividendDeclaredDate" name="dividendDeclaredDate" value={formData.dividendDeclaredDate} onChange={handleChange} required />
         </div>
         <div>
           <label htmlFor="Dividend_Ex_Date">Dividend Ex Date:</label>
-          <input type="date" id="Dividend_Ex_Date" name="DividendExDate" value={formData.DividendExDate} onChange={handleChange} required />
+          <input type="date" id="dividendExDate" name="dividendExDate" value={formData.dividendExDate} onChange={handleChange} required />
         </div>
         <div>
           <label htmlFor="Dividend_Record_Date">Dividend Record Date:</label>
-          <input type="date" id="Dividend_Record_Date" name="DividendRecordDate" value={formData.DividendRecordDate} onChange={handleChange} required />
+          <input type="date" id="dividendRecordDate" name="dividendRecordDate" value={formData.dividendRecordDate} onChange={handleChange} required />
         </div>
         <div>
           <label htmlFor="Dividend_Pay_Date">Dividend Pay Date:</label>
-          <input type="date" id="Dividend_Pay_Date" name="DividendPayDate" value={formData.DividendPayDate} onChange={handleChange} required />
+          <input type="date" id="dividendPayDate" name="dividendPayDate" value={formData.dividendPayDate} onChange={handleChange} required />
         </div>
       </div>
 
@@ -392,15 +392,15 @@ const AddEquity = () => {
       <div className="form-row">
         <div>
           <label htmlFor="Dividend_Amount">Dividend Amount:</label>
-          <input type="number" step="0.01" id="Dividend_Amount" name="Dividend_Amount" value={formData.Dividend_Amount} onChange={handleChange} />
+          <input type="number" step="0.01" id="dividendAmount" name="dividendAmount" value={formData.dividendAmount} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="Frequency">Frequency:</label>
-          <input type="text" id="Frequency" name="Frequency" value={formData.Frequency} onChange={handleChange} />
+          <input type="text" id="frequency" name="frequency" value={formData.frequency} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="Dividend_Type">Dividend Type:</label>
-          <input type="text" id="Dividend_Type" name="DividendType" value={formData.DividendType} onChange={handleChange} required />
+          <input type="text" id="dividendType" name="dividendType" value={formData.dividendType} onChange={handleChange} required />
         </div>
       </div>
 

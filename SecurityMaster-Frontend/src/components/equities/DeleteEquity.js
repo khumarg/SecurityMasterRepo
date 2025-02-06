@@ -17,7 +17,10 @@ const DeleteEquity = () => {
     // }, [])
 
     const deleteBtnHandler = (event) => {
-        axios.delete(`https://localhost:7126/api/Equities/Delete/${id}`)
+        const confirm = window.confirm("Do you really want to delete?")
+
+        if(confirm === true) {
+            axios.delete(`https://localhost:7126/api/Equities/Delete/${id}`)
             .then(res => {
                 console.log(res)
 
@@ -26,9 +29,9 @@ const DeleteEquity = () => {
             .catch(err => {
                 console.log(err)
 
-                setMsg("Equity could not be deleted!")
+                setMsg("Equity could not be deleted!" + " " + err.message)
             })
-
+        }
         event.preventDefault();
     }
 
