@@ -44,8 +44,8 @@ const GetEquityByID = () => {
             <div>
                 <h2>Get Equity By ID</h2>
                 <form onSubmit={clickHandler}>
-                    <label>Enter SecurityID: </label>
-                    <input className='getByID-input-box' type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter SecurityID'></input>
+                    <label>Enter Security ID: </label>
+                    <input className='getByID-input-box' type='text' value={id} onChange={(event) => setId(event.target.value)} placeholder='Enter Security ID'></input>
                     <button className='searchBtn' type='submit'>Search</button>
                 </form>
                 <h2>{msg}</h2>

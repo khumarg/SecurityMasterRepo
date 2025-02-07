@@ -11,6 +11,12 @@ import EquityHome from './components/equities/EquityHome';
 import NotFound from './components/NotFound';
 import BondsHome from './components/bonds/BondsHome';
 import GetEquityByName from './components/equities/GetEquityByName';
+import GetAllBonds from './components/bonds/GetAllBonds';
+import GetBondsByID from './components/bonds/GetBondByID';
+import GetBondByName from './components/bonds/GetBondByName';
+import DeleteBond from './components/bonds/DeleteBond';
+import AddBond from './components/bonds/AddBond';
+import UpdateBond from './components/bonds/UpdateBond';
 
 function App() {
   return (
@@ -29,7 +35,15 @@ function App() {
         </Route>
         
 
-        <Route path='/Bonds' element={<BondsHome/>}/>
+        <Route path='/Bonds' element={<BondsHome/>}>
+          <Route index element={<GetAllBonds/>}/>
+          <Route path='AllBonds' element={<GetAllBonds/>}/>
+          <Route path='ID' element={<GetBondsByID/>}/>
+          <Route path='Name' element={<GetBondByName/>}/>
+          <Route path='Add' element={<AddBond/>}/>
+          <Route path='Update' element={<UpdateBond/>}/>
+          <Route path='Delete' element={<DeleteBond/>}/>
+        </Route>
 
         <Route path='*' element={<NotFound/>}/>
       </Routes>

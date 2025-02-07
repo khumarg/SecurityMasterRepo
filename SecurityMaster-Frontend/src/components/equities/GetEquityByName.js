@@ -41,7 +41,7 @@ const GetEquityByName = () => {
     } else {
         return (
             <div>
-                <h2>Get Equity By ID</h2>
+                <h2>Get Equity By Name</h2>
                 <form onSubmit={clickHandler}>
                     <label>Enter SecurityName: </label>
                     <input className='getByID-input-box' type='text' value={sname} onChange={(event) => setSname(event.target.value)} placeholder='Enter SecurityName'></input>

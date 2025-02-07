@@ -80,7 +80,6 @@ const UpdateEquity = () => {
                 setMsg('')
 
                 setData(res.data)
-                alert(`Equity ID: ${id} Updated Successfully!`)
             })
             .catch(error => {
                 console.log(error.message)
