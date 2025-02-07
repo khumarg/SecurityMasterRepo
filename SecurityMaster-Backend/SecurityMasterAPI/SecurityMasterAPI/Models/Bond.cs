@@ -29,7 +29,7 @@ public partial class Bond
 
     public string Sedol { get; set; } = null!;
 
-    public DateOnly FirstCouponDate { get; set; }
+    public string FirstCouponDate { get; set; }
 
     public string? Cap { get; set; }
 
@@ -43,23 +43,23 @@ public partial class Bond
 
     public string? Spread { get; set; }
 
-    public bool CallableFlag { get; set; }
+    public string CallableFlag { get; set; }
 
     public string FixToFloatFlag { get; set; } = null!;
 
     public string PutableFlag { get; set; } = null!;
 
-    public DateOnly IssueDate { get; set; }
+    public string IssueDate { get; set; }
 
     public string? LastResetDate { get; set; }
 
-    public DateOnly Maturity { get; set; }
+    public string Maturity { get; set; }
 
     public double? CallNotificationMaxDays { get; set; }
 
     public string? PutNotificationMaxDays { get; set; }
 
-    public DateOnly PenultimateCouponDate { get; set; }
+    public string PenultimateCouponDate { get; set; }
 
     public string? ResetFrequency { get; set; }
 
@@ -129,7 +129,7 @@ public partial class Bond
 
     public double LastPrice { get; set; }
 
-    public DateOnly? CallDate { get; set; }
+    public string? CallDate { get; set; }
 
     public double? CallPrice { get; set; }
 }

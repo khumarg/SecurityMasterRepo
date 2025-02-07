@@ -41,7 +41,7 @@ namespace SecurityMasterAPI.Controllers
         }
 
         // GET: api/Equities/5
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<Equity>> GetEquity(int id)
         {
             var equity = await _context.Equities.FindAsync(id);
@@ -54,9 +54,23 @@ namespace SecurityMasterAPI.Controllers
             return equity;
         }
 
+        // GET: api/Equities/IBM US
+        [HttpGet("{sname}")]
+        public async Task<ActionResult<Equity>> GetEquity(string sname)
+        {
+            var equity = await _context.Equities.FirstOrDefaultAsync(x => x.SecurityName == sname);
+
+            if (equity == null)
+            {
+                return NotFound();
+            }
+
+            return equity;
+        }
+
         // PUT: api/Equities/Edit/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("Edit/{id}")]
+        [HttpPut("Edit/{id:int}")]
         public async Task<IActionResult> PutEquity(int id, Equity equity)
         {
             if (id != equity.SecurityId)
@@ -111,7 +125,7 @@ namespace SecurityMasterAPI.Controllers
         }
 
         // DELETE: api/Equities/Delete/5
-        [HttpDelete("Delete/{id}")]
+        [HttpDelete("Delete/{id:int}")]
         public async Task<IActionResult> DeleteEquity(int id)
         {
             var equity = await _context.Equities.FindAsync(id);
