@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Controllers\\BondsController.cs",
               "ToolTip": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Controllers\\BondsController.cs",
               "RelativeToolTip": "SecurityMasterAPI\\Controllers\\BondsController.cs",
-              "ViewState": "AgIAAFQAAAAAm5mZmZkbwHEAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAQDMzMzPvvy4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T06:15:54.59Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "SecurityMasterAPI\\Models\\Bond.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T05:58:30.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T05:58:30.149Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "SecurityMasterAPI\\Models\\Equity.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAvwCMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T10:01:20.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T10:01:20.289Z"
             },
             {
               "$type": "Document",
@@ -95,7 +93,7 @@
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Controllers\\EquitiesController.cs",
               "ToolTip": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Controllers\\EquitiesController.cs",
               "RelativeToolTip": "SecurityMasterAPI\\Controllers\\EquitiesController.cs",
-              "ViewState": "AgIAAIwAAAAAZ2ZmZiYvwH8AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAANDMzM7MQwDwAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T09:36:50.3Z",
               "EditorCaption": ""
@@ -110,8 +108,7 @@
               "RelativeToolTip": "SecurityMasterAPI\\Models\\SecurityMaster3685Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAN0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T09:35:50.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T09:35:50.642Z"
             },
             {
               "$type": "Document",

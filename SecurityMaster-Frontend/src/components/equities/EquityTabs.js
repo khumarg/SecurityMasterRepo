@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import { Box, Divider, Tab } from '@mui/material'
+import { Box, Tab } from '@mui/material'
 import {TabContext, TabList, TabPanel } from '@mui/lab'
 import SecuritySummary from './Tabs/SecuritySummary'
 import SecurityIdentifier from './Tabs/SecurityIdentifier'
@@ -30,13 +30,13 @@ const EquityTabs = () => {
         return <h1>Loading....</h1>
     }
 
-    const secSum = Object.keys(data[0]).slice(0,6);
-
     const handleChange = (event, newValue) => {
         setValue(newValue)
     }
     return (
         <Box>
+            <br/> <br/> <br/>
+            
         <TabContext value={value}>
             <Box sx={{borderBottom: 1, borderColor : 'divider'}}>
                 <TabList variant='scrollable' aria-label='tabs example' onChange={handleChange} textColor='primary'

@@ -58,7 +58,7 @@ namespace SecurityMasterAPI.Controllers
         [HttpGet("{sname}")]
         public async Task<ActionResult<Equity>> GetEquity(string sname)
         {
-            var equity = await _context.Equities.FirstOrDefaultAsync(x => x.SecurityName == sname);
+            var equity = await _context.Equities.FirstOrDefaultAsync(x => x.SecurityName.Contains(sname));
 
             if (equity == null)
             {

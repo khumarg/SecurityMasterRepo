@@ -19,7 +19,7 @@ const GetEquityByID = () => {
                 setEquity(res.data)
             })
             .catch(error => {
-                setMsg(`Could not found Equity ID: ${id}`)
+                setMsg(`Could not find Equity ID: ${id}`)
                 console.log(error.message)
 
                 setFlag(false)

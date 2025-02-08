@@ -18,7 +18,7 @@ const GetEquityByName = () => {
                 setFlag(true)
             })
             .catch(error => {
-                setMsg(`Could not found Equity Name: ${sname}`)
+                setMsg(`Could not find Equity Name: ${sname}`)
                 console.log(error.message)
 
                 setFlag(false)

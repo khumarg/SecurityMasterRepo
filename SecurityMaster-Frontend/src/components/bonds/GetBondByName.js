@@ -18,7 +18,7 @@ const GetBondByName = () => {
                 setFlag(true)
             })
             .catch(error => {
-                setMsg(`Could not found Security Name: ${sname}`)
+                setMsg(`Could not find Security Name: ${sname}`)
                 console.log(error.message)
 
                 setFlag(false)

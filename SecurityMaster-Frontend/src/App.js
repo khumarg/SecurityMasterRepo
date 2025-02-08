@@ -17,6 +17,8 @@ import GetBondByName from './components/bonds/GetBondByName';
 import DeleteBond from './components/bonds/DeleteBond';
 import AddBond from './components/bonds/AddBond';
 import UpdateBond from './components/bonds/UpdateBond';
+import EquityTabs from './components/equities/EquityTabs';
+import BondsTabs from './components/bonds/BondsTabs';
 
 function App() {
   return (
@@ -25,8 +27,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Equities' element={<EquityHome/>}>
-          <Route index element={<GetAllEquities/>}/>
-          <Route index path='AllEquities' element={<GetAllEquities/>}/>
+          {/* <Route index element={<GetAllEquities/>}/> */}
+          {/* <Route index path='AllEquities' element={<GetAllEquities/>}/> */}
+          <Route index element={<EquityTabs/>}/>
+          <Route index path='AllEquities' element={<EquityTabs/>}/>
           <Route path='ID' element={<GetEquityByID/>}></Route>
           <Route path='Name' element={<GetEquityByName/>}></Route>
           <Route path='Add' element={<AddEquity/>}></Route>
@@ -36,8 +40,10 @@ function App() {
         
 
         <Route path='/Bonds' element={<BondsHome/>}>
-          <Route index element={<GetAllBonds/>}/>
-          <Route path='AllBonds' element={<GetAllBonds/>}/>
+          {/* <Route index element={<GetAllBonds/>}/>
+          <Route path='AllBonds' element={<GetAllBonds/>}/> */}
+          <Route index element={<BondsTabs/>}/>
+          <Route index path='AllBonds' element={<BondsTabs/>}/>
           <Route path='ID' element={<GetBondsByID/>}/>
           <Route path='Name' element={<GetBondByName/>}/>
           <Route path='Add' element={<AddBond/>}/>

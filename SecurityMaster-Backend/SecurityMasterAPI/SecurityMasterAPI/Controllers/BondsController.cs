@@ -45,7 +45,8 @@ namespace SecurityMasterAPI.Controllers
         [HttpGet("{sname}")]
         public async Task<ActionResult<Bond>> GetBond(string sname)
         {
-            var bond = await _context.Bonds.FirstOrDefaultAsync(x => x.SecurityName == sname);
+            var bond = await _context.Bonds.FirstOrDefaultAsync(x => x.SecurityName.Contains(sname));
+            //var bond = _context.Bonds.Where(x => EF.Functions.Like(x.SecurityName, $"%{sname}%"));
 
             if (bond == null)
             {

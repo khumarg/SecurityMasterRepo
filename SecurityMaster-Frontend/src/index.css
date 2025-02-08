@@ -42,8 +42,8 @@ nav {
 
 .nav-link:hover,
 .nav-link.active {
-  background: #ff6600;
-  color: #ffffff;
+  background: rgb(242, 206, 114);
+  color: black;
 }
 
 /* Responsive Design */
@@ -182,7 +182,7 @@ input:focus {
   background-color: darkgreen;
 }
 
-table {
+/* table {
   width: 10%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
@@ -199,4 +199,30 @@ th {
 }
 tr:nth-child(even) {
   background-color: #fafafa;
+} */
+
+table {
+  width: auto;
+  height: auto;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
 }

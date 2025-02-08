@@ -408,7 +408,7 @@ const AddBond = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="form-row">
+        <div className="submit-container">
             <button type="submit" className="submit-button">Submit</button>
         </div>
       </form>

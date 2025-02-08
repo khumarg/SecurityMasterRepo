@@ -19,7 +19,7 @@ const GetBondsByID = () => {
                 setBonds(res.data)
             })
             .catch(error => {
-                setMsg(`Could not found Bonds ID: ${id}`)
+                setMsg(`Could not find Bonds ID: ${id}`)
                 console.log(error.message)
 
                 setFlag(false)
