@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using SecurityMasterAPI.Models;
+using Serilog;
 
 namespace SecurityMasterAPI
 {
@@ -18,9 +19,19 @@ namespace SecurityMasterAPI
                 builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
             }));
 
+            //Configuring Serilog
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(builder.Configuration)
+                .Enrich.FromLogContext()
+                .WriteTo.Console()
+                .WriteTo.File("logs/SecMasterLog")
+                .CreateLogger();
+
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            builder.Host.UseSerilog();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

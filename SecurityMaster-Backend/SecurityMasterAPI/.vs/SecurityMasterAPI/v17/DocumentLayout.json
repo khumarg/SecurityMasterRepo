@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|c:\\users\\kgirdhar\\desktop\\c# trainings\\securitymasterapi\\securitymasterapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|solutionrelative:securitymasterapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|c:\\users\\kgirdhar\\desktop\\c# trainings\\securitymasterapi\\securitymasterapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|solutionrelative:securitymasterapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|c:\\users\\kgirdhar\\desktop\\c# trainings\\securitymasterapi\\securitymasterapi\\controllers\\equitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|solutionrelative:securitymasterapi\\controllers\\equitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|c:\\users\\kgirdhar\\desktop\\c# trainings\\securitymasterapi\\securitymasterapi\\models\\equity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|solutionrelative:securitymasterapi\\models\\equity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|c:\\users\\kgirdhar\\desktop\\c# trainings\\securitymasterapi\\securitymasterapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58D224FF-A742-4D72-A98B-6978FE216D05}|SecurityMasterAPI\\SecurityMasterAPI.csproj|solutionrelative:securitymasterapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "SecurityMasterAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\appsettings.json",
+              "RelativeToolTip": "SecurityMasterAPI\\appsettings.json",
+              "ViewState": "AgIAAAIAAAAgMzMzM7MiwBEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-09T13:09:49.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BondsController.cs",
               "DocumentMoniker": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Controllers\\BondsController.cs",
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Controllers\\BondsController.cs",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Bond.cs",
               "DocumentMoniker": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Models\\Bond.cs",
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Models\\Bond.cs",
@@ -71,36 +88,38 @@
               "RelativeToolTip": "SecurityMasterAPI\\Models\\Bond.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T05:58:30.149Z"
+              "WhenOpened": "2025-02-07T05:58:30.149Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Equity.cs",
               "DocumentMoniker": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Models\\Equity.cs",
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Models\\Equity.cs",
               "ToolTip": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Models\\Equity.cs",
               "RelativeToolTip": "SecurityMasterAPI\\Models\\Equity.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAvwCMAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAIA+wCMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T10:01:20.289Z"
+              "WhenOpened": "2025-02-04T10:01:20.289Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EquitiesController.cs",
               "DocumentMoniker": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Controllers\\EquitiesController.cs",
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Controllers\\EquitiesController.cs",
               "ToolTip": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Controllers\\EquitiesController.cs",
               "RelativeToolTip": "SecurityMasterAPI\\Controllers\\EquitiesController.cs",
-              "ViewState": "AgIAADEAAAAANDMzM7MQwDwAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAANDMzM7MQwDYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T09:36:50.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SecurityMaster3685Context.cs",
               "DocumentMoniker": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Models\\SecurityMaster3685Context.cs",
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Models\\SecurityMaster3685Context.cs",
@@ -108,19 +127,21 @@
               "RelativeToolTip": "SecurityMasterAPI\\Models\\SecurityMaster3685Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAN0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T09:35:50.642Z"
+              "WhenOpened": "2025-02-04T09:35:50.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Program.cs",
               "RelativeDocumentMoniker": "SecurityMasterAPI\\Program.cs",
               "ToolTip": "C:\\Users\\kgirdhar\\Desktop\\C# trainings\\SecurityMasterAPI\\SecurityMasterAPI\\Program.cs",
               "RelativeToolTip": "SecurityMasterAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAACAmZmZmZkVwBoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T09:15:16.349Z"
+              "WhenOpened": "2025-02-04T09:15:16.349Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -261,3 +261,12 @@ C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\D
 C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\kgirdhar\Desktop\C# trainings\SecurityMasterAPI\SecurityMasterAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
