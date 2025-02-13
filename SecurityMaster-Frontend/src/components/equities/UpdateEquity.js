@@ -144,7 +144,7 @@ const UpdateEquity = () => {
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="SecurityID">SecurityID:</label>
-                <input type="text" id="securityId" name="securityId" value={data.securityId} onChange={handleChange} required/>
+                <input type="text" id="securityId" name="securityId" value={data.securityId} onChange={handleChange} readOnly/>
               </div>
               <div className="form-group">
                 <label htmlFor="Security_Name">Security Name:</label>
@@ -156,11 +156,21 @@ const UpdateEquity = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="Has_Position">Has Position:</label>
-                <input type="text" id="hasPosition" name="hasPosition" value={data.hasPosition} onChange={handleChange} required />
+                {/* <input type="text" id="hasPosition" name="hasPosition" value={data.hasPosition} onChange={handleChange} required /> */}
+                <select id="hasPosition" name="hasPosition" value={data.hasPosition} onChange={handleChange} required>
+                  <option value="">Select</option>
+                  <option value="TRUE">TRUE</option>
+                  <option value="FALSE">FALSE</option>
+                </select>
               </div>
               <div className="form-group">
                 <label htmlFor="Is_Active_Security">Is Active Security:</label>
-                <input type="text" id="isActiveSecurity" name="isActiveSecurity" value={data.isActiveSecurity} onChange={handleChange} required />
+                {/* <input type="text" id="isActiveSecurity" name="isActiveSecurity" value={data.isActiveSecurity} onChange={handleChange} required /> */}
+                <select id="isActiveSecurity" name="isActiveSecurity" value={data.isActiveSecurity} onChange={handleChange} required>
+                  <option value="">Select</option>
+                  <option value="TRUE">TRUE</option>
+                  <option value="FALSE">FALSE</option>
+                </select>
               </div>
             </div>
     
@@ -208,7 +218,12 @@ const UpdateEquity = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="Is_ADR_Flag">Is ADR Flag:</label>
-                <input type="text" id="isAdrFlag" name="isAdrFlag" value={data.isAdrFlag} onChange={handleChange} required />
+                {/* <input type="text" id="isAdrFlag" name="isAdrFlag" value={data.isAdrFlag} onChange={handleChange} required /> */}
+                <select id="isAdrFlag" name="isAdrFlag" value={data.isAdrFlag} onChange={handleChange} required>
+                  <option value="">Select</option>
+                  <option value="TRUE">TRUE</option>
+                  <option value="FALSE">FALSE</option>
+                </select>
               </div>
             </div>
     

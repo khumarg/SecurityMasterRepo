@@ -19,7 +19,7 @@ const GetAllBonds = () => {
 
   return (
     <div>
-      <h2>All Bonds</h2>
+      {/* <h2>All Bonds</h2> */}
       {/* {info} */}
 
       <table>

@@ -19,7 +19,7 @@ const RiskBonds = () => {
         return <h1>Loading....</h1>
     }
 
-    const secSum = Object.keys(bonds[0]).slice(31,35);
+    const secSum = Object.keys(bonds[0]).slice(30,35);
 
     console.log(secSum)
 

@@ -135,15 +135,15 @@ const AddBond = () => {
             </div>
             <div className="form-group">
             <label htmlFor="isin">ISIN:</label>
-            <input type="text" id="isin" name="isin" value={formData.isin} onChange={handleChange} />
+            <input type="text" id="isin" name="isin" value={formData.isin} onChange={handleChange} required/>
             </div>
             <div className="form-group">
             <label htmlFor="bbgTicker">BBG Ticker:</label>
-            <input type="text" id="bbgTicker" name="bbgTicker" value={formData.bbgTicker} onChange={handleChange} />
+            <input type="text" id="bbgTicker" name="bbgTicker" value={formData.bbgTicker} onChange={handleChange} required/>
             </div>
             <div className="form-group">
             <label htmlFor="bbgUniqueId">BBG Unique ID:</label>
-            <input type="text" id="bbgUniqueId" name="bbgUniqueId" value={formData.bbgUniqueId} onChange={handleChange} />
+            <input type="text" id="bbgUniqueId" name="bbgUniqueId" value={formData.bbgUniqueId} onChange={handleChange} required/>
             </div>
         </div>
 
@@ -159,15 +159,15 @@ const AddBond = () => {
             </div>
             <div className="form-group">
             <label htmlFor="firstCouponDate">First Coupon Date:</label>
-            <input type="date" id="firstCouponDate" name="firstCouponDate" value={formData.firstCouponDate} onChange={handleChange} />
+            <input type="date" id="firstCouponDate" name="firstCouponDate" value={formData.firstCouponDate} onChange={handleChange} required/>
             </div>
             <div className="form-group">
             <label htmlFor="cap">Cap:</label>
-            <input type="text" id="cap" name="cap" value={formData.cap} onChange={handleChange} required />
+            <input type="text" id="cap" name="cap" value={formData.cap} onChange={handleChange} />
             </div>
             <div className="form-group">
             <label htmlFor="floor">Floor:</label>
-            <input type="text" id="floor" name="floor" value={formData.floor} onChange={handleChange} required />
+            <input type="text" id="floor" name="floor" value={formData.floor} onChange={handleChange}  />
             </div>
         </div>
 
@@ -175,15 +175,15 @@ const AddBond = () => {
         <div className="form-row">
             <div className='form-group'>
             <label htmlFor="couponFrequency">Coupon Frequency:</label>
-            <input type="number" id="couponFrequency" name="couponFrequency" value={formData.couponFrequency} onChange={handleChange} />
+            <input type="number" id="couponFrequency" name="couponFrequency" value={formData.couponFrequency} onChange={handleChange} required/>
             </div>
             <div className='form-group'>
             <label htmlFor="coupon">Coupon:</label>
-            <input type="number" id="coupon" name="coupon" value={formData.coupon} onChange={handleChange} />
+            <input type="number" id="coupon" name="coupon" value={formData.coupon} onChange={handleChange} required/>
             </div>
             <div className='form-group'>
             <label htmlFor="couponType">Coupon Type:</label>
-            <input type="text" id="couponType" name="couponType" value={formData.couponType} onChange={handleChange} />
+            <input type="text" id="couponType" name="couponType" value={formData.couponType} onChange={handleChange} required/>
             </div>
             <div className='form-group'>
             <label htmlFor="spread">Spread:</label>
@@ -191,7 +191,12 @@ const AddBond = () => {
             </div>
             <div className='form-group'>
             <label htmlFor="callableFlag">Callable Flag:</label>
-            <input type="text" id="callableFlag" name="callableFlag" value={formData.callableFlag} onChange={handleChange} required />
+            {/* <input type="text" id="callableFlag" name="callableFlag" value={formData.callableFlag} onChange={handleChange} required /> */}
+            <select id="callableFlag" name="callableFlag" value={formData.callableFlag} onChange={handleChange} required>
+                <option value=''>SELECT</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
             </div>
         </div>
 
@@ -199,15 +204,25 @@ const AddBond = () => {
         <div className="form-row">
             <div className='form-group'>
             <label htmlFor="fixToFloatFlag">Fix to float flag:</label>
-            <input type="text" id="fixToFloatFlag" name="fixToFloatFlag" value={formData.fixToFloatFlag} onChange={handleChange} />
+            {/* <input type="text" id="fixToFloatFlag" name="fixToFloatFlag" value={formData.fixToFloatFlag} onChange={handleChange} required /> */}
+            <select id="fixToFloatFlag" name="fixToFloatFlag" value={formData.fixToFloatFlag} onChange={handleChange} required>
+                <option value="">SELECT</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+            </select>
             </div>
             <div className='form-group'>
             <label htmlFor="putableFlag">Putable Flag:</label>
-            <input type="text" id="putableFlag" name="putableFlag" value={formData.putableFlag} onChange={handleChange} />
+            {/* <input type="text" id="putableFlag" name="putableFlag" value={formData.putableFlag} onChange={handleChange} required/> */}
+            <select id="putableFlag" name="putableFlag" value={formData.putableFlag} onChange={handleChange} required>
+                <option value="">SELECT</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+            </select>
             </div>
             <div className='form-group'>
             <label htmlFor="issueDate">Issue Date:</label>
-            <input type="date" id="issueDate" name="issueDate" value={formData.issueDate} onChange={handleChange} />
+            <input type="date" id="issueDate" name="issueDate" value={formData.issueDate} onChange={handleChange} required/>
             </div>
             <div className='form-group'>
             <label htmlFor="lastResetDate">Last Reset Date:</label>
@@ -215,7 +230,7 @@ const AddBond = () => {
             </div>
             <div className='form-group'>
             <label htmlFor="maturity">Maturity:</label>
-            <input type="date" id="maturity" name="maturity" value={formData.maturity} onChange={handleChange} />
+            <input type="date" id="maturity" name="maturity" value={formData.maturity} onChange={handleChange} required/>
             </div>
         </div>
 
@@ -231,15 +246,20 @@ const AddBond = () => {
             </div>
             <div className='form-group'>
             <label htmlFor="penultimateCouponDate">Penultimate Coupon Date:</label>
-            <input type="date" step="0.01" id="penultimateCouponDate" name="penultimateCouponDate" value={formData.penultimateCouponDate} onChange={handleChange} />
+            <input type="date" step="0.01" id="penultimateCouponDate" name="penultimateCouponDate" value={formData.penultimateCouponDate} onChange={handleChange} required />
             </div>
             <div className='form-group'>
             <label htmlFor="resetFrequency">Reset Frequency:</label>
-            <input type="text" id="resetFrequency" name="resetFrequency" value={formData.resetFrequency} onChange={handleChange} required/>
+            <input type="text" id="resetFrequency" name="resetFrequency" value={formData.resetFrequency} onChange={handleChange}/>
             </div>
             <div className='form-group'>
             <label htmlFor="hasPosition">Has Position:</label>
-            <input type="text" id="hasPosition" name="hasPosition" value={formData.hasPosition} onChange={handleChange} required/>
+            {/* <input type="text" id="hasPosition" name="hasPosition" value={formData.hasPosition} onChange={handleChange} required/> */}
+            <select id="hasPosition" name="hasPosition" value={formData.hasPosition} onChange={handleChange} required>
+                <option value="">SELECT</option>
+                <option value="TRUE">TRUE</option>
+                <option value="FALSE">FALSE</option>
+            </select>
             </div>
         </div>
 
@@ -251,11 +271,11 @@ const AddBond = () => {
             </div>
             <div className='form-group'>
             <label htmlFor="_30dVolatility">30D Volatility:</label>
-            <input type="number" id="_30dVolatility" name="_30dVolatility" value={formData._30dVolatility} onChange={handleChange} required />
+            <input type="number" id="_30dVolatility" name="_30dVolatility" value={formData._30dVolatility} onChange={handleChange} />
             </div>
             <div className='form-group'>
             <label htmlFor="_90dVolatility">90D Volatility:</label>
-            <input type="number" id="_90dVolatility" name="_90dVolatility" value={formData._90dVolatility} onChange={handleChange} required />
+            <input type="number" id="_90dVolatility" name="_90dVolatility" value={formData._90dVolatility} onChange={handleChange}  />
             </div>
             <div className='form-group'>
             <label htmlFor="convexity">Convexity:</label>
@@ -271,7 +291,7 @@ const AddBond = () => {
         <div className="form-row">
             <div className='form-group'>
             <label htmlFor="pfAssetClass">PF Asset Class:</label>
-            <input type="text" id="pfAssetClass" name="pfAssetClass" value={formData.pfAssetClass} onChange={handleChange} />
+            <input type="text" id="pfAssetClass" name="pfAssetClass" value={formData.pfAssetClass} onChange={handleChange} required/>
             </div>
             <div className='form-group'>
             <label htmlFor="pfCountry">PF Country:</label>
@@ -279,7 +299,7 @@ const AddBond = () => {
             </div>
             <div className='form-group'>
             <label htmlFor="pfCreditRating">PF Credit Rating:</label>
-            <input type="text" id="pfCreditRating" name="pfCreditRating" value={formData.pfCreditRating} onChange={handleChange} />
+            <input type="text" id="pfCreditRating" name="pfCreditRating" value={formData.pfCreditRating} onChange={handleChange} required/>
             </div>
             <div className='form-group'>
             <label htmlFor="pfCurrency">PF Currency:</label>
@@ -295,7 +315,7 @@ const AddBond = () => {
         <div className="form-row">
             <div className='form-group'>
             <label htmlFor="pfLiquidityProfile">PF Liquidity Profile:</label>
-            <input type="text" id="pfLiquidityProfile" name="pfLiquidityProfile" value={formData.pfLiquidityProfile} onChange={handleChange} />
+            <input type="text" id="pfLiquidityProfile" name="pfLiquidityProfile" value={formData.pfLiquidityProfile} onChange={handleChange} required/>
             </div>
             <div className='form-group'>
             <label htmlFor="pfMaturity">PF Maturity:</label>
@@ -303,7 +323,7 @@ const AddBond = () => {
             </div>
             <div className='form-group'>
             <label htmlFor="pfNaicsCode">PF NAICS Code:</label>
-            <input type="text" id="pfNaicsCode" name="pfNaicsCode" value={formData.pfNaicsCode} onChange={handleChange} required/>
+            <input type="text" id="pfNaicsCode" name="pfNaicsCode" value={formData.pfNaicsCode} onChange={handleChange}/>
             </div>
             <div className='form-group'>
             <label htmlFor="pfRegion">PF Region:</label>
@@ -311,7 +331,7 @@ const AddBond = () => {
             </div>
             <div className='form-group'>
             <label htmlFor="pfSector">PF Sector:</label>
-            <input type="text" id="pfSector" name="pfSector" value={formData.pfSector} onChange={handleChange} required/>
+            <input type="text" id="pfSector" name="pfSector" value={formData.pfSector} onChange={handleChange} />
             </div>
         </div>
 
@@ -335,7 +355,7 @@ const AddBond = () => {
             </div>
             <div>
             <label htmlFor="countryOfIssuance">Country of Issuance:</label>
-            <input type="text" id="countryOfIssuance" name="countryOfIssuance" value={formData.countryOfIssuance} onChange={handleChange} />
+            <input type="text" id="countryOfIssuance" name="countryOfIssuance" value={formData.countryOfIssuance} onChange={handleChange} required/>
             </div>
         </div>
 
@@ -343,15 +363,15 @@ const AddBond = () => {
         <div className="form-row">
             <div>
             <label htmlFor="issueCurrency">Issue Currency:</label>
-            <input type="text" id="issueCurrency" name="issueCurrency" value={formData.issueCurrency} onChange={handleChange} />
+            <input type="text" id="issueCurrency" name="issueCurrency" value={formData.issueCurrency} onChange={handleChange} required/>
             </div>
             <div>
             <label htmlFor="issuer">Issuer:</label>
-            <input type="text" id="issuer" name="issuer" value={formData.issuer} onChange={handleChange} />
+            <input type="text" id="issuer" name="issuer" value={formData.issuer} onChange={handleChange} required/>
             </div>
             <div>
             <label htmlFor="riskCurrency">Risk Currency:</label>
-            <input type="text" id="riskCurrency" name="riskCurrency" value={formData.riskCurrency} onChange={handleChange} />
+            <input type="text" id="riskCurrency" name="riskCurrency" value={formData.riskCurrency} onChange={handleChange} required />
             </div>
             <div>
             <label htmlFor="putDate">Put Date:</label>
@@ -367,7 +387,7 @@ const AddBond = () => {
         <div className="form-row">
             <div>
             <label htmlFor="askPrice">Ask Price:</label>
-            <input type="number" id="askPrice" name="askPrice" value={formData.askPrice} onChange={handleChange} />
+            <input type="number" id="askPrice" name="askPrice" value={formData.askPrice} onChange={handleChange} required />
             </div>
             <div>
             <label htmlFor="highPrice">High Price:</label>
@@ -391,19 +411,19 @@ const AddBond = () => {
         <div className="form-row">
             <div>
             <label htmlFor="bidPrice">Bid Price:</label>
-            <input type="number" step="0.01" id="bidPrice" name="bidPrice" value={formData.bidPrice} onChange={handleChange} />
+            <input type="number" step="0.01" id="bidPrice" name="bidPrice" value={formData.bidPrice} onChange={handleChange} required />
             </div>
             <div>
             <label htmlFor="lastPrice">Last Price:</label>
-            <input type="number" id="lastPrice" name="lastPrice" value={formData.lastPrice} onChange={handleChange} />
+            <input type="number" id="lastPrice" name="lastPrice" value={formData.lastPrice} onChange={handleChange} required/>
             </div>
             <div>
             <label htmlFor="callDate">Call Date:</label>
-            <input type="text" id="callDate" name="callDate" value={formData.callDate} onChange={handleChange} required />
+            <input type="text" id="callDate" name="callDate" value={formData.callDate} onChange={handleChange} />
             </div>
             <div>
             <label htmlFor="callPrice">Call Price:</label>
-            <input type="number" id="callPrice" name="callPrice" value={formData.callPrice} onChange={handleChange} required />
+            <input type="number" id="callPrice" name="callPrice" value={formData.callPrice} onChange={handleChange} />
             </div>
         </div>
 

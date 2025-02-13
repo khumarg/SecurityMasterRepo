@@ -19,7 +19,7 @@ const RefData = () => {
         return <h1>Loading....</h1>
     }
 
-    const secSum = Object.keys(equities[0]).slice(40,49);
+    const secSum = Object.keys(equities[0]).slice(39,49);
 
     console.log(secSum)
 

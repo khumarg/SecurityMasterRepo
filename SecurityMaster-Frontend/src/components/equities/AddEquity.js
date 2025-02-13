@@ -116,11 +116,21 @@ const AddEquity = () => {
         </div>
         <div className="form-group">
           <label htmlFor="Has_Position">Has Position:</label>
-          <input type="text" id="hasPosition" name="hasPosition" value={formData.hasPosition} onChange={handleChange} required />
+          {/* <input type="text" id="hasPosition" name="hasPosition" value={formData.hasPosition} onChange={handleChange} required /> */}
+          <select id="hasPosition" name="hasPosition" value={formData.hasPosition} onChange={handleChange} required>
+            <option value="">Select</option>
+            <option value="TRUE">TRUE</option>
+            <option value="FALSE">FALSE</option>
+        </select>
         </div>
         <div className="form-group">
           <label htmlFor="Is_Active_Security">Is Active Security:</label>
-          <input type="text" id="isActiveSecurity" name="isActiveSecurity" value={formData.isActiveSecurity} onChange={handleChange} required />
+          {/* <input type="text" id="isActiveSecurity" name="isActiveSecurity" value={formData.isActiveSecurity} onChange={handleChange} required /> */}
+          <select id="isActiveSecurity" name="isActiveSecurity" value={formData.isActiveSecurity} onChange={handleChange} required>
+            <option value="">Select</option>
+            <option value="TRUE">TRUE</option>
+            <option value="FALSE">FALSE</option>
+          </select>
         </div>
       </div>
 
@@ -168,7 +178,12 @@ const AddEquity = () => {
         </div>
         <div className="form-group">
           <label htmlFor="Is_ADR_Flag">Is ADR Flag:</label>
-          <input type="text" id="isAdrFlag" name="isAdrFlag" value={formData.isAdrFlag} onChange={handleChange} required />
+          {/* <input type="text" id="isAdrFlag" name="isAdrFlag" value={formData.isAdrFlag} onChange={handleChange} required /> */}
+          <select id="isAdrFlag" name="isAdrFlag" value={formData.isAdrFlag} onChange={handleChange} required>
+            <option value="">Select</option>
+            <option value="TRUE">TRUE</option>
+            <option value="FALSE">FALSE</option>
+          </select>
         </div>
       </div>
 

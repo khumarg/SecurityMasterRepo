@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using SecurityMasterAPI.Models;
+using SecurityMasterAPI.Models.BondRepo;
+using SecurityMasterAPI.Models.EquityRepo;
 using Serilog;
 
 namespace SecurityMasterAPI
@@ -13,6 +15,9 @@ namespace SecurityMasterAPI
             builder.Services.AddDbContext<SecurityMaster3685Context>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("SecurityMasterConn"))
                 );
+
+            builder.Services.AddTransient<IEquity, EquityOperations>();
+            builder.Services.AddTransient<IBond, BondOperations>();
 
             builder.Services.AddCors(options => options.AddPolicy("IVPSecurityMasterPolicy", builder =>
             {

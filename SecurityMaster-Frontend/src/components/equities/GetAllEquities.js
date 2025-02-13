@@ -20,7 +20,7 @@ const GetAllEquities = () => {
 
   return (
     <div>
-      <h2>All Equities</h2>
+      {/* <h2>All Equities</h2> */}
       {/* {info} */}
 
       <table>

@@ -40,7 +40,18 @@ const EquityTabs = () => {
         <TabContext value={value}>
             <Box sx={{borderBottom: 1, borderColor : 'divider'}}>
                 <TabList variant='scrollable' aria-label='tabs example' onChange={handleChange} textColor='primary'
-                indicatorColor='primary' centered>
+                indicatorColor='primary' centered
+                sx={{
+                    "& .MuiTab-root": {
+                      color: "00b4d8",
+                    //   fontWeight: "bold",
+                    },
+                    "& .Mui-selected": {
+                      color: "black",
+                      fontWeight: "bold"
+                    }
+                  }}
+                >
                     <Tab label='Security Summary' value='1'/>
                     <Tab label='Security Identifier' value='2'/>
                     <Tab label='Security Details' value='3'/>

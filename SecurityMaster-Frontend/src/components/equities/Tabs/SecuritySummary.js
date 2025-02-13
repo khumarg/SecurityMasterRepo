@@ -19,7 +19,7 @@ const SecuritySummary = () => {
         return <h1>Loading....</h1>
     }
 
-    const secSum = Object.keys(equities[0]).slice(1,7);
+    const secSum = Object.keys(equities[0]).slice(0,7);
 
     console.log(secSum)
 

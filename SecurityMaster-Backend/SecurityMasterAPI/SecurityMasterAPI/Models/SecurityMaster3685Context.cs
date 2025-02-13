@@ -19,6 +19,8 @@ public partial class SecurityMaster3685Context : DbContext
 
     public virtual DbSet<Equity> Equities { get; set; }
 
+    public virtual DbSet<AuditSRM> AuditSRM { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
 //        => optionsBuilder.UseSqlServer("Server=192.168.0.13\\\\\\\\sqlexpress,49753; Database = SecurityMaster_3685; User Id = sa; Password = sa@12345678; TrustServerCertificate = True;");

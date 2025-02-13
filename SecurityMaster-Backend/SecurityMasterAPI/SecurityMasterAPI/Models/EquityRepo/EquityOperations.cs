@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SecurityMasterAPI.Controllers;
 
 namespace SecurityMasterAPI.Models.EquityRepo
 {
@@ -19,85 +20,97 @@ namespace SecurityMasterAPI.Models.EquityRepo
             return equities;
         }
 
-        //public async Task<Equity> GetEquity(int id)
-        //{
-        //    var equity = await _context.Equities.FindAsync(id);
+        public async Task<Equity> GetEquity(int id)
+        {
+            var equity = await _context.Equities.FindAsync(id);
 
-        //    if (equity == null)
-        //    {
-        //        return new Equity();
-        //    }
+            if (equity == null)
+            {
+                return null;
+            }
 
-        //    return equity;
-        //}
+            return equity;
+        }
 
-        //public async Task<Equity> PostEquity(Equity equity)
-        //{
-        //    _context.Equities.Add(equity);
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateException)
-        //    {
-        //        if (EquityExists(equity.SecurityId))
-        //        {
-        //            return equity;
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
+        public async Task<Equity> GetEquity(string sname)
+        {
+            var equity = await _context.Equities.FirstOrDefaultAsync(x => x.SecurityName.Contains(sname));
 
-        //    return equity;
-        //}
+            if (equity == null)
+            {
+                return null;
+            }
 
-        //public async Task PutEquity(int id, Equity equity)
-        //{
-        //    if (id != equity.SecurityId)
-        //    {
-        //        return;
-        //    }
+            return equity;
+        }
 
-        //    _context.Entry(equity).State = EntityState.Modified;
+        public async Task<Equity> PostEquity(Equity equity)
+        {
+            _context.Equities.Add(equity);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (EquityExists(equity.SecurityId))
+                {
+                    return equity;
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!EquityExists(id))
-        //        {
-        //            return;
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
+            return equity;
+        }
 
-        //    return;
-        //}
+        public async Task PutEquity(int id, Equity equity)
+        {
+            if (id != equity.SecurityId)
+            {
+                return;
+            }
 
-        //public async Task DeleteEquity(int id)
-        //{
-        //    var equity = await _context.Equities.FindAsync(id);
-        //    if (equity == null)
-        //    {
-        //        return;
-        //    }
+            _context.Entry(equity).State = EntityState.Modified;
 
-        //    _context.Equities.Remove(equity);
-        //    await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!EquityExists(id))
+                {
+                    throw;
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //    return;
-        //}
+            return;
+        }
 
-        //private bool EquityExists(int id)
-        //{
-        //    return _context.Equities.Any(e => e.SecurityId == id);
-        //}
+        public async Task DeleteEquity(int id)
+        {
+            var equity = await _context.Equities.FindAsync(id);
+            if (equity == null)
+            {
+                return;
+            }
+
+            _context.Equities.Remove(equity);
+            await _context.SaveChangesAsync();
+
+            return;
+        }
+
+        public bool EquityExists(int id)
+        {
+            return _context.Equities.Any(e => e.SecurityId == id);
+        }
     }
 }

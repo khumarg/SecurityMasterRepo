@@ -19,7 +19,7 @@ const RegDetailsBonds = () => {
         return <h1>Loading....</h1>
     }
 
-    const secSum = Object.keys(bonds[0]).slice(36,46);
+    const secSum = Object.keys(bonds[0]).slice(35,46);
 
     console.log(secSum)
 
